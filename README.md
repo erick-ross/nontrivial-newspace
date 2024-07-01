@@ -10,9 +10,9 @@ In each folder, one can run:
 $ # verify that our dimension formula matches dimension computed by Sage (for N < 300)
 $ sage compute_dim.sage test 300   
 $ # compute all of the N, kLB that we need to check
-$ sage bound_dim.sage > out_N_kLB.txt   
+$ sage bound_dim.sage > all_N_kLB.txt   
 $ # check all of these N and k < kLB; computing all the triples when dim is small
-$ sage compute_dim.sage N_kLB out_bound_dim.txt > ALL_TRIPLES.txt
+$ sage compute_dim.sage N_kLB all_N_kLB.txt > ALL_TRIPLES.txt
 $ # double check that this gives the same list from just checking all values of N < 200 (and small k).
 $ sage compute_dim.sage small_N_k 200 > out_small.txt && diff ALL_TRIPLES.txt out_small.txt
 ```
