@@ -142,6 +142,7 @@ def omega(n):
 
 # For N, f, B given, this function returns kLB where
 # dim Sk(Gamma0(N), chi) > B for all k >= kLB  (ind. of chi)
+# i.e. we only need to check k < kLB
 def find_kLB_f(N, f, B):
     f_fact = factor(f)
     psi_term = psi(N) 
