@@ -19,3 +19,7 @@ $ sage compute_dim.sage small_N_k 200 > out_small.txt && diff ALL_TRIPLES.txt ou
 
 - `fullspace/ALL_TRIPLES.txt` gives the complete list of triples `(N,k,chi)` for which `dim S_k(Gamma0(N),chi) <= 2`.
 - `newspace/ALL_TRIPLES.txt` gives the complete list of triples `(N,k,chi)` for which `dim S_k^new(Gamma0(N),chi) <= 1` (excluding `(N,k,chi)` where `2 | f(chi) and 2 || N/f(chi)`).
+
+
+Additionally, `disprove_conj.sage` contains code to disprove the conjecture from Greg Martin that `dim S_2^new(Gamma0(N)) takes on all possible positive integers.
+ 
