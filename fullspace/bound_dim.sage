@@ -179,7 +179,7 @@ def find_kLB(N, B):
 
 
 pairs_N_kLB = []
-for N in range(1, 735025):
+for N in range(1, 729974):
     kLB = find_kLB(N,2)
     if kLB > 2:
         pairs_N_kLB.append((N,kLB))
