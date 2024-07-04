@@ -1,9 +1,10 @@
 # Nontrivial Newspace
 
-In the paper "Newspaces with Nebentypus: An Explicit Dimension Formula, Classification of Trivial Newspaces, and Character Equidistribution Property", we computed an explicit dimension formula for `S_k^new(Gamma0(N),chi)`. We then used this dimension formula to give lower bounds on `dim S_k^new(Gamma0(N),chi)` for sufficiently large `N,k`  (assuming it is not the case that `2 | f(chi) and 2 || N/f(chi)`; for these `(N,k,chi)`, `dim S_k^new(Gamma0(N),chi) = 0`).
-This repository contains the code to check the finitely many remaining cases.
+In the paper "Newspaces with Nebentypus: An Explicit Dimension Formula, Classification of Trivial Newspaces, and Character Equidistribution Property", we computed an explicit dimension formula for `S_k^new(Gamma0(N),chi)`. We then used this dimension formula to give lower bounds on `dim S_k^new(Gamma0(N),chi)`  (assuming it is not the case that `2 | f(chi) and 2 || N/f(chi)`; for these `(N,k,chi)`, `dim S_k^new(Gamma0(N),chi) = 0`).
+We then used these lower bounds to show that given any bound `B`, `dim S_k^new(Gamma0(N),chi) > B` for `N+k` sufficiently large.
+This repository contains code to check the finitely many remaining cases. This allows us to classify all newspaces of small dimension.
 
-The `fullspace` folder contains code to compute the dimension of the full space `S_k(Gamma0(N),chi)` for small `N,k`. The `newspace` folder contains code to compute the dimension of the newspace `S_k^new(Gamma0(N),chi)` for small `N,k`.
+The `fullspace` folder contains code to compute the dimension of the full space `S_k(Gamma0(N),chi)` for small `N+k`. The `newspace` folder contains code to compute the dimension of the newspace `S_k^new(Gamma0(N),chi)` for small `N+k`.
 
 In each folder, one can run:
 ```
