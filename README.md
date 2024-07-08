@@ -18,9 +18,8 @@ $ # double check that this gives the same list from just checking all values of 
 $ sage compute_dim.sage small_N_k 200 > out_small.txt && diff ALL_TRIPLES.txt out_small.txt
 ```
 
+- `paper.pdf` is the paper "Newspaces with Nebentypus: An Explicit Dimension Formula, Classification of Trivial Newspaces, and Character Equidistribution Property"
 - `fullspace/ALL_TRIPLES.txt` gives the complete list of triples `(N,k,chi)` for which `dim S_k(Gamma0(N),chi) <= 2`.
 - `newspace/ALL_TRIPLES.txt` gives the complete list of triples `(N,k,chi)` for which `dim S_k^new(Gamma0(N),chi) <= 1` (excluding `(N,k,chi)` where `2 | f(chi) and 2 || N/f(chi)`).
-
-
-Additionally, `disprove_conj.sage` contains code to disprove a conjecture from Greg Martin that `dim S_2^new(Gamma0(N))` takes on all possible non-negative integers.
+- `disprove_conj.sage` contains code to disprove a conjecture from Greg Martin that `dim S_2^new(Gamma0(N))` takes on all possible non-negative integers.
  
