@@ -365,7 +365,7 @@ def compute_dims(filenm):
 
 if ARG == 'test':
     test_small_dim(int(ARG_PARAM))
-if ARG == 'test_k13':
+elif ARG == 'test_k13':
     test_k13(int(ARG_PARAM))
 elif ARG == 'small_N_k':
     compute_dims_smallNk(int(ARG_PARAM))
