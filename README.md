@@ -1,6 +1,6 @@
 # Nontrivial Newspace
 
-In the paper "Newspaces with Nebentypus: An Explicit Dimension Formula, Classification of Trivial Newspaces, and Character Equidistribution Property", we computed an explicit dimension formula for `S_k^new(Gamma0(N),chi)`. We then used this dimension formula to give lower bounds on `dim S_k^new(Gamma0(N),chi)`  (assuming it is not the case that `2 | f(chi) and 2 || N/f(chi)`; for these `(N,k,chi)`, `dim S_k^new(Gamma0(N),chi) = 0`).
+In the paper [Newspaces with Nebentypus: An Explicit Dimension Formula, Classification of Trivial Newspaces, and Character Equidistribution Property](https://arxiv.org/abs/2407.08881), we computed an explicit dimension formula for `S_k^new(Gamma0(N),chi)`. We then used this dimension formula to give lower bounds on `dim S_k^new(Gamma0(N),chi)`  (assuming it is not the case that `2 | f(chi) and 2 || N/f(chi)`; for these `(N,k,chi)`, `dim S_k^new(Gamma0(N),chi) = 0`).
 We then used these lower bounds to show that given any bound `B`, `dim S_k^new(Gamma0(N),chi) > B` for `N+k` sufficiently large.
 This repository contains code to check the finitely many remaining cases. This allows us to classify all newspaces of small dimension.
 
@@ -18,7 +18,6 @@ $ # double check that this gives the same list from just checking all values of 
 $ sage compute_dim.sage small_N_k 200 > out_small.txt && diff ALL_TRIPLES.txt out_small.txt
 ```
 
-- `paper.pdf` is the paper "Newspaces with Nebentypus: An Explicit Dimension Formula, Classification of Trivial Newspaces, and Character Equidistribution Property"
 - `fullspace/ALL_TRIPLES.txt` gives the complete list of triples `(N,k,chi)` for which `dim S_k(Gamma0(N),chi) <= 2`.
 - `newspace/ALL_TRIPLES.txt` gives the complete list of triples `(N,k,chi)` for which `dim S_k^new(Gamma0(N),chi) <= 1` (excluding `(N,k,chi)` where `2 | f(chi) and 2 || N/f(chi)`).
 - `disprove_conj.sage` contains code to disprove a conjecture from Greg Martin that `dim S_2^new(Gamma0(N))` takes on all possible non-negative integers.
