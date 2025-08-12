@@ -1,6 +1,6 @@
 # Nontrivial Newspace
 
-In the paper [Newspaces with Nebentypus: An Explicit Dimension Formula, Classification of Trivial Newspaces, and Character Equidistribution Property](https://arxiv.org/abs/2407.08881), we computed an explicit dimension formula for `S_k^new(Gamma0(N),chi)`. We then used this dimension formula to give lower bounds on `dim S_k^new(Gamma0(N),chi)`  (assuming it is not the case that `2 | f(chi) and 2 || N/f(chi)`; for these `(N,k,chi)`, `dim S_k^new(Gamma0(N),chi) = 0`).
+In the paper [Newspaces with Nebentypus: An Explicit Dimension Formula and Classification of Trivial Newspaces](https://arxiv.org/abs/2407.08881), we computed an explicit dimension formula for `S_k^new(Gamma0(N),chi)`. We then used this dimension formula to give lower bounds on `dim S_k^new(Gamma0(N),chi)`  (assuming it is not the case that `2 | f(chi) and 2 || N/f(chi)`; for these `(N,k,chi)`, `dim S_k^new(Gamma0(N),chi) = 0`).
 We then used these lower bounds to show that given any bound `B`, `dim S_k^new(Gamma0(N),chi) > B` for `N+k` sufficiently large.
 This repository contains code to check the finitely many remaining cases. This allows us to classify all newspaces of small dimension.
 
